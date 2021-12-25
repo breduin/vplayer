@@ -7,6 +7,13 @@
 
 </head>
 <body>
+
+<div 
+  style="
+    background-color: #000;
+    width: fit-content;
+    "
+  >
   <div id="player" style="width: 800px; height: 600px;">
 
     <div class="js-video-container" style="width: 100%; height: 100%"></div>
@@ -20,20 +27,29 @@
       <button class="js-fullscreen-button">Fullscreen</button>
       -->
     </div>
+    <!--
     <div style="color: white;">
       <span class="js-current-time"></span>
       —
       <span class="js-duration"></span>
     </div>
-
+    -->
     <!--
     <div class="js-progress" style="background-color: grey;">
       <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
     </div>
     -->
   </div>
-  <i class="fa fa-play" aria-hidden="true" style="border: 0; cursor: pointer;"></i>
-
+  <i 
+  class="fa fa-play" 
+  aria-hidden="true"
+  style="
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    "
+    ></i>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
