@@ -6,38 +6,69 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <style>
-      .player-container {
+
+      .container {
+        display: flex;
+        flex-direction: column;
         background-color: #000;
-        border: 1px;
-        width: 800px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.7);
+      }      
+
+      .player-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+        height: 90vh;
       }
+
       .player {
-        width: 100%; 
-        height: 90%;
+        width: 800px;
+        height: 600px; 
       }
+
+      .buttons-container {
+        display: flex;
+        height: 50px;
+        flex-grow: 1;
+      }
+
       .player-button {
-        height: 10%;
+        height: 100%;
         font-size: 2em;
         border: none;
         cursor: pointer;
         background-color: transparent;
         color: white;
       }
+      
     </style>  
   </head>
 
   <body>
 
-    <div id="player" class="player-container">
-      <div class="js-video-container player">      
+    <div id="player" class="container">
+
+     
+      <div class="player-container">
+        <div class="js-video-container player"></div>
       </div>
-      <button class="js-play-button player-button">
-        <i class="fa fa-play" aria-hidden="true"></i>
-      </button>
-      <button class="js-pause-button player-button" hidden>
-        <i class="fa fa-pause" aria-hidden="true"></i>
-      </button>  
+
+      <div class="buttons-container">
+
+        <button class="js-play-button player-button">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+
+        <button class="js-pause-button player-button" hidden>
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
