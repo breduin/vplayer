@@ -9,57 +9,43 @@
 <body>
 
 <div 
+  id="player"
   style="
     background-color: #000;
-    width: fit-content;
+    border: 1px;
+    width: 800px;
+    height: 600px;
     "
   >
-  <div id="player" style="width: 800px; height: 600px;">
-
-    <div class="js-video-container" style="width: 100%; height: 100%"></div>
-
-    <div>
-      <!-- 
-      <button class="js-play-button">Play</button>
-      <button class="js-pause-button" hidden>Pause</button>
-      <button class="js-volume-button">Volume</button>
-      <button class="js-mute-button" hidden>Mute</button>
-      <button class="js-fullscreen-button">Fullscreen</button>
-      -->
-    </div>
-    <!--
-    <div style="color: white;">
-      <span class="js-current-time"></span>
-      —
-      <span class="js-duration"></span>
-    </div>
-    -->
-    <!--
-    <div class="js-progress" style="background-color: grey;">
-      <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
-    </div>
-    -->
+  <div class="js-video-container" style="width: 100%; height: 90%">      
   </div>
-  <i 
-  class="fa fa-play" 
-  aria-hidden="true"
-  style="
-    border: 0;
+  <button class="js-play-button"
+    style="
+    height: 10%;
+    font-size: 2em;
+    border: none;
     cursor: pointer;
     background-color: transparent;
     color: white;
     "
+    >
+  <i class="fa fa-play" aria-hidden="true"
     ></i>
-    <i 
-    class="fa fa-pause" 
-    aria-hidden="true"
+  </button>
+  <button 
+    class="js-pause-button" 
+    hidden
     style="
-      border: 0;
-      cursor: pointer;
-      background-color: transparent;
-      color: white;
-      "
-      ></i>    
+    height: 10%;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    "
+  >
+    <i class="fa fa-pause" aria-hidden="true"></i>
+    </button>  
 </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
